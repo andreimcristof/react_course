@@ -4,15 +4,15 @@ const CommentDetail = (props) => {
     return (
         <div className="comment">
             <a href="/" className="avatar">
-                <image alt="avatar" />
+                <img alt="avatar" />
             </a>
             <div className="content">
                 <a href="/" className="author">
-                    Test1
+                    {props.author}
                     </a>
                 <div className="metadata">
                     <span className="date">
-                        time 1
+                        {new Date().toDateString()}
                         </span>
                 </div>
                 <div className="text">
@@ -22,3 +22,4 @@ const CommentDetail = (props) => {
         </div>
     );
 }
+export default CommentDetail;
