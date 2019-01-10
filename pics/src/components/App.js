@@ -8,7 +8,7 @@ class App extends React.Component {
 
     onSearchBarSubmit = async (searchTerm) => {
         const res = await axios
-            .get('https://api.punkapi.com/v2/beers?page=1&per_page=10');
+            .get('https://api.punkapi.com/v2/beers?page=1&per_page=30');
 
         this.setState({ images : res.data })
     }
